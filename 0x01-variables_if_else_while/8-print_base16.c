@@ -10,7 +10,6 @@ int main(void)
 	unsigned char a = '0';
 
 	int 1;
-
 	for (i = 0; i < 10; i++)
 	{
 	putchar(a);
