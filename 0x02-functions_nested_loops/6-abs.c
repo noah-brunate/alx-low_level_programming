@@ -4,12 +4,14 @@
 * @n: parameter
 * Return: absolute value of a number
 */
-int _abs(int);
+int _abs(int)
 {
 	int n;
 
 	if (n > 0)
+	{
 		n = -n
+	}
 	return (n);
 }
 
