@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
 * jack_bauer -> prints 24 hours
 */
@@ -28,7 +28,7 @@ void jack_bauer(void)
 			}
 			else if (j >= 10)
 			{
-				_putchar('');
+				_putchar(':');
 				_putchar((j / 10) + '0');
 				_putchar((j % 10) + '0');
 			}
@@ -36,4 +36,3 @@ void jack_bauer(void)
 		}
 	}
 }
-
