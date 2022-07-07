@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
 * print_triangle -> printimg line
 * @size: integer params
