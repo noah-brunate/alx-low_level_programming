@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
 * _isupper -> this is a function to check uppercase alphas
