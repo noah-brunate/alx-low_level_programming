@@ -1,7 +1,9 @@
-#include <stdio.h>
+#include<stdio.h>
+
 /**
 * fizz_buzz -> printimg to 100
 */
+
 void fizz_buzz(void)
 {
 	int x;
