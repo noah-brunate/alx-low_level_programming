@@ -5,19 +5,21 @@
 void fizz_buzz(void)
 {
 	int x;
+	char i[] = "Fizz";
+	char j[] = "Buzz";
+	char k[] = "FizzBuzz";
 
 	for (x = 1; x <= 100; x++)
 	{
-		if (x == 0)
-			printf("Buzz");
-		else if (x % 3 == 0 && x % 5 == 0)
-			printf("FizzBuzz");
-		else if (x % 3 == 0)
-			printf("Fizz");
+		if (x % 3 == 0)
+			printf("%s", i);
 		else if (x % 5 == 0)
-			printf("Buzz");
+			printf("%s", j);
+		else if (x % 3 == 0 && x % 5 == 0)
+			printf("%s", k);
 		else
-			printf("%d" x);
+			printf("%d", x);
 	}
 	printf("\n");
 }
+
