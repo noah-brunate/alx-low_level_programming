@@ -15,9 +15,9 @@ void fizz_buzz(void)
 		else if (x % 3 == 0)
 			printf("Fizz");
 		else if (x % 5 == 0)
-			printf("Buzz ");
+			printf("Buzz");
 		else
-			printf("%d "x);
+			printf("%d" x);
 	}
 	printf("\n");
 }
