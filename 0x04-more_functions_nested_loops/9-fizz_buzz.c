@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 /**
 * fizz_buzz -> printimg to 100
 */
