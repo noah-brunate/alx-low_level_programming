@@ -14,13 +14,13 @@ void fizz_buzz(void)
 		if (x  == 100)
 			printf("%s", j);
 		else if (x % 3 == 0 && x % 5 == 0)
-			printf("%s", k);
+			printf("%s ", k);
 		else if (x % 3 == 0)
-			printf("%s", i);
+			printf("%s ", i);
 		else if (x % 5 == 0)
-			printf("%s", j);
+			printf("%s ", j);
 		else
-			printf("%s", x);
+			printf("%d ", x);
 	}
 	printf("\n");
 }
