@@ -7,16 +7,16 @@
 */
 void print_array(int *a, int n)
 {
-	int [n];
-	int i, j;
+	int x[n];
+	char i, j;
 
 	for (i = 0; i < n; i++)
 	{
-		[i] = i;
+		x[i] = i;
 	}
 	for (j = 0; j < n; j++)
 	{
-		_putchar("Element[%d] = %d, \n", j, [j]);
+		_putchar("Element[%d] = %d, \n", j, x[j]);
 	}
 	_putchar('\n');
 	return (0);
