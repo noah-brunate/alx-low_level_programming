@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
 * print_array -> prints elements
 * @a: parameter1
@@ -7,12 +9,12 @@
 */
 void print_array(int *a, int n)
 {
-	int [n];
-	char j;
+	int i[n];
+	int j;
 
 	for (j = 0; j < n; j++)
 	{
-		printf("Element[%d] = %d, \n", j, [j]);
+		printf("Element[%d] = %d, \n", j, i[j]);
 	}
 	return (0);
 }
