@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
 * print_array -> prints elements
 * @a: parameter1
@@ -9,13 +8,13 @@
 */
 void print_array(int *a, int n)
 {
-	int i[n];
+	int *a[n];
 	int j;
 
 	for (j = 0; j < n; j++)
 	{
-		printf("Element[%d] = %d, \n", j, i[j]);
+		printf("Element[%d] = %d, \n", j, *a[j]);
 	}
-	return (0);
+	return (n);
 }
 
