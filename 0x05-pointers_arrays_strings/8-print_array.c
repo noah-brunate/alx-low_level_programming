@@ -8,13 +8,13 @@
 */
 void print_array(int *a, int n)
 {
-	int tmp[n];
-	int a;
+	int array[n];
+	int i;
 
-	for (a = 0; a < n; a++)
+	for (i = 0; i < n; i++)
 	{
-		printf("Element[%d] = %d, \n", a, tmp[a]);
+		printf("Element[%d] = %d, \n", i, array[i]);
 	}
-	return (0);
+	return ('\n');
 }
 
