@@ -4,17 +4,17 @@
 * print_array -> prints elements
 * @a: parameter1
 * @n: parameter2
-* Return: elements of an array of integers
+* Return: always 0
 */
 void print_array(int *a, int n)
 {
-	int *a[n];
-	int j;
+	int tmp[n];
+	int a;
 
-	for (j = 0; j < n; j++)
+	for (a = 0; a < n; a++)
 	{
-		printf("Element[%d] = %d, \n", j, *a[j]);
+		printf("Element[%d] = %d, \n", a, tmp[a]);
 	}
-	return (n);
+	return (0);
 }
 
