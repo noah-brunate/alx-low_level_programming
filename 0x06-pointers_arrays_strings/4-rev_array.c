@@ -1,31 +1,25 @@
 #include "main.h"
 
 /**
-* leet -> encodes a string into 1337
-* @s: input string.
-* Return: the pointer to dest.
+* reverse_array -> reverses the content of an array
+* of integers.
+* @a: array.
+* @n: number of elements of the array.
+* Return: no return.
 */
 
-char *leet(char *s)
+void reverse_array(int *a, int n)
 {
-	int count = 0, i;
-	int low_letters[] = {97, 101, 111, 116, 108};
-	int upp_letters[] = {65, 69, 79, 84, 76};
-	int numbers[] = {52, 51, 48, 55, 49};
+	int i, j, temp;
 
-	while (*(s + count) != '\0')
+	for (i = 0; i < n - 1; i++)
 	{
-		for (i = 0; i < 5; i++)
+		for (j = i + 1; j > 0; j--)
 		{
-			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
-			{
-				*((s + count) = numbers[i]);
-				break;
-			}
+			temp = *(a + j);
+			*(a + j) = *(a + (j - 1));
+			*(a + (j - 1)) = temp;
 		}
-		count++;
 	}
-
-	return (s);
 }
 
