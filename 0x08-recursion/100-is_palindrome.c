@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* _strlen_recursion - size
-* @s: pointer to string params
-* Return: recursion
+* _strlen_recursion - size
+* @s: pointer to string params
+* Return: recursion
 */
 
-int _strlen_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	if (!*s)
 	{
@@ -14,12 +14,12 @@ int _strlen_recursion(char *s)
 	}
 	return (1 + _strlen_recursion(++s));
 }
- 
+
 /**
-* p1 - palindrome
-* @s: pointer to string
-* @l: position
-* Return: boolena
+* p1 - palindrome
+* @s: pointer to string
+* @l: position
+* Return: boolena
 */
 
 int p1(char *s, int l)
@@ -37,12 +37,12 @@ int p1(char *s, int l)
 }
 
 /**
-* is_palindrome - palindrome
-* @s: pointer to string
-* Return: recursion
+* is_palindrome - palindrome
+* @s: pointer to string
+* Return: recursion
 */
 
-int is_palindrome(char *s)
+int is_palindrome(char *s)
 {
 
 	int len = _strlen_recursion(s);
