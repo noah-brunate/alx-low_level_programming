@@ -1,4 +1,5 @@
-#include "stdio.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
 * main -> this is a function to print its name
@@ -11,9 +12,9 @@ int main(int argc, char *argv[])
 {
 	int result, num1, num2;
 
-	if (args != 3)
+	if (argc != 3)
 	{
-		printf("%s\n", Error);
+		printf("%s\n", "Error");
 		return (1);
 	}
 	num1 = atoi(argv[1]);
