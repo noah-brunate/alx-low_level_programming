@@ -1,16 +1,7 @@
-#include <stdio.h>
+#ifndef FILE_ABS
+#define FILE_ABS
 
-/**
-* main -> entry point
-* Return: return 0
-*/
+#define ABS(X) ((X) < 0 ? -1 * (X) : (X))
 
-#define ABS(x) ((x < 0) || (x > 0) ? x(-1) : x)
+#endif
 
-int main(void)
-{
-	int x;
-
-	return (ABS(x));
-	return (0);
-}
