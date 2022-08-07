@@ -1,8 +1,10 @@
-#include <stdlib.h>
+#include <stdio.h>
+
 /**
-* fizz_buzz -> printimg to 100
+* main -> entry point
+* Return: always 0
 */
-void fizz_buzz(void)
+int main(void)
 {
 	int x;
 	char i[] = "Fizz";
@@ -21,5 +23,6 @@ void fizz_buzz(void)
 			printf("%d ", x);
 	}
 	printf("\n");
+	return (0);
 }
 
