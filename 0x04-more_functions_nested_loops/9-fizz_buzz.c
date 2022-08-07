@@ -11,9 +11,7 @@ void fizz_buzz(void)
 
 	for (x = 1; x <= 100; x++)
 	{
-		if (x  == 100)
-			printf("%s", j);
-		else if (x % 3 == 0 && x % 5 == 0)
+		if (x % 3 == 0 && x % 5 == 0)
 			printf("%s ", k);
 		else if (x % 3 == 0)
 			printf("%s ", i);
