@@ -24,23 +24,8 @@ int sum_them_all(const unsigned int n, ...)
 		{
 			return (0);
 		}
-	va_end(ap);
 	}
+	va_end ap;
 	return (0);
 }
-/**
-* main -> entry point
-* Return: 0
-*/
-int main(void)
-{
-	for (i = 0; i < n; i++)
-	{
-		sum_them_all(n);
-		_putchar(sum + '0');
-	}
-	_putchar('\n');
-	return (0);
-}
-
 
