@@ -9,11 +9,10 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list(ap)
-
-	va_start(ap, n)
+	va_list ap;
 	unsigned int i, sum = 0;
 
+	va_start(ap, n);
 	for (i = 0; i < n; i++)
 	{
 		if (n != 0)
@@ -25,7 +24,7 @@ int sum_them_all(const unsigned int n, ...)
 		{
 			return (0);
 		}
-	va_end(ap)
+	va_end(ap);
 	}
 	return (0);
 }
