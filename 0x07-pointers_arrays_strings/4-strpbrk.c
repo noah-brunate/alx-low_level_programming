@@ -6,19 +6,10 @@
 * @s: string being searched
 * @accept: string we are searching for
 *
-* Return: return a pointer to the bytes in s
+* Return: return a pointer to the bytes in s or NULL if not found
 */
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
-
-	if (s[i] == accept[i])
-	{
 		return (strpbrk(s, accept));
-	}
-	else
-	{
-		return ('\0');
-	}
 }
 
