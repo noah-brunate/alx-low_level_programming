@@ -7,33 +7,18 @@
 *
 * Return: returns nth node
 */
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	unsigned int i = 0;
-	listint_t *tmp;
+	unsigned int i;
 
 	if (head == NULL)
 		return (NULL);
 
-	tmp = head;
-
-	while (tmp)
+	for (i = 0; i < index && head != NULL; i++)
 	{
-		tmp = tmp->next;
-		i++;
+		head = head->next;
 	}
-
-	if (index >= i)
-	{
-		return (NULL);
-	}
-
-	while (tmp && i < index)
-	{
-		tmp = tmp->next;
-		i++;
-	}
-	return (tmp);
+	return (head);
 }
 
 
