@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			j = j * 2;
 		}
-		else
+		if (*(b + i) == '1')
 		{
 			j = (j * 2) + 1;
 		}
