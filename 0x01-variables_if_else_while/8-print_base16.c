@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 /**
 * main - entry point
 *
@@ -7,19 +8,16 @@
 */
 int main(void)
 {
-	unsigned char a = '0';
+	char i;
+	int j;
 
-	int 1;
-	for (i = 0; i < 10; i++)
+	for (j = 0; j < 10; j++)
 	{
-	putchar(a);
-	a++;
+		putchar(j);
 	}
-	a = '1';
-	for (i = 0; i < 6; i++)
+	for (i = 'a'; i < 'g'; i++)
 	{
-	putchar('0' + a);
-	a++;
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
