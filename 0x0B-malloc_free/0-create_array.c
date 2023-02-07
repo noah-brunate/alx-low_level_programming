@@ -19,8 +19,9 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else
-		p[0] = c;
-		return (p);
+
+	p[0] = c;
+	return (p);
 }
+
 
