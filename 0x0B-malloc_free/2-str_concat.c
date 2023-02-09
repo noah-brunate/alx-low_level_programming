@@ -9,16 +9,32 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-	char *p = (char *)malloc(sizeof(char));
+	int i, j, c, d;
 
 	if (s1 == NULL)
-		s1 = ""
+		s1 = "";
 	if (s2 == NULL)
-		s2 = ""
-	if (!p)
-		return (NULL);
-	p = s1 + s2;
+		s2 = "";
+
+	for (i = 0; s1[i] != '\0'; i++)
+		;
+	for (j = 0; s2[j] != '\0'; j++)
+		;
+
+	char *p = (char *)malloc((i * sizeof(char)) + (j * sizeof(char)) + 1);
+
+	for (c = 0, d = 0; c < (i + j + 1); c++)
+	{
+		if (c < i)
+			p[c] = s1[c];
+		else
+			p[c] = s2[d];
+			d++;
+	}
+
+	*(p + i + j + 1) = '\0';
 	return (p);
 }
+
 
 
