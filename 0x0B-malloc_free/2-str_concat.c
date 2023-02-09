@@ -21,18 +21,15 @@ char *str_concat(char *s1, char *s2)
 	for (j = 0; s2[j] != '\0'; j++)
 		;
 
-	char *p = (char *)malloc((i * sizeof(char)) + (j * sizeof(char)) + 1);
+	char *p = (char *)malloc((i * sizeof(*s1)) + (j * sizeof(*s2)) + 1);
 
 	for (c = 0, d = 0; c < (i + j + 1); c++)
 	{
 		if (c < i)
 			p[c] = s1[c];
 		else
-			p[c] = s2[d];
-			d++;
+			p[c] = s2[d++];
 	}
-
-	*(p + i + j + 1) = '\0';
 	return (p);
 }
 
