@@ -1,1 +1,1 @@
-This directory is about implementation of hash tables
+# Solutions to tasks on Hash tables
